@@ -1,0 +1,2 @@
+# MyDjangoBestPrcatice
+记录一些django的最佳实践经验
