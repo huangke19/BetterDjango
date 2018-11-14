@@ -11,9 +11,29 @@ Once you have a model, you can rapidly derive models admins, models forms, and a
 
 
 
-### splitting models.py into multiple files
+### Splitting models.py into multiple files
 
 Like most components of Django, a large models.py file can be split up into multiple files within a package.
+
+All definitions that can be exposed at package level must be defined in \__init__.py with global scope.
+
+```python
+# example
+
+models/
+|	 __init__.py
+|	comment.py
+|	post.py
+|	postable.py
+```
+
+To ensure that all the models are imported correctly, \__init__.py should have the following lines:
+
+```python
+from post import Post
+from postable import Postable
+from comment import Comment
+```
 
 
 
