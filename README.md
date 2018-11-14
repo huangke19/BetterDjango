@@ -67,6 +67,8 @@ to turn a model into an abstract base class, you will need to mention abstract=T
 
 ### Model mixins
 
+https://stackoverflow.com/questions/533631/what-is-a-mixin-and-why-are-they-useful
+
 Model mixing are abstract classeds that can be added as a parent class of a model. Python supports multiple inheritances. you can list any number of parent classes for a model.
 
 Mixing ought to be orthogonal and easily compassable. they are more similar in behavior to composition rather than inheritance.
