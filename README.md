@@ -103,6 +103,30 @@ class Comment(Postable):
 
 
 
+## Dealing with Legacy Code
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ## split settings.py
