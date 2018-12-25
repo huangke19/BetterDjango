@@ -78,3 +78,13 @@ print(TEMPLATE_DIR)
 ### 注意
 
 HTML模板的第一行始终是DOCTYPE声明，如果把{% load staticfiles %}放在前面，渲染得到的HTML中，DOCTYPE声明前面将出现空白，多出的空白会导致HTML标记无法通过验证。
+
+
+
+```python
+{% load static %} {% load staticfiles %} 
+```
+
+区别: 
+
+> The most important difference is staticfiles can manage files stored on CDN, since its resolver can manage hashes for example. core.static only append STATIC_URL to the static filename, which is not enough if you're processing your files (e.g. adding md5 hash to clear cache between releases)
